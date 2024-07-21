@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .nav{
+            grid-template-columns: 6fr 6fr;
+        }
+
+        .btn{
+            top: 18px;
+            padding:15px;
+            border: none;
+            outline: none;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 20px;
+            width: 125px;
+            height:50px;
+            text-align: center;
+
+        }
+       .btn::after{
+     content: "";
+     z-index: -1;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-color:gray;
+     left: 0;
+     top: 0;
+     border-radius: 10px;
+       }
+       .btn::before{
+        content: "";
+       background: linear-gradient(
+        45deg,
+        #ff0000,#ff7300,#fffb00,#48ff00,
+        #00ffd5,
+        #002bff,#ff00c8,#ff0000
+       );
+       position: absolute;
+       top: -2px;
+       left: -2px;
+       background-size: 600%;
+       z-index: -1;
+       width: calc(100% + 6px);
+       height: calc(100% + 6px);
+       filter: blur(8px);
+       animation: glowing 20s linear infinite;
+       transition:opacity .3s ease-in-out;
+       border-radius: 10px;
+       opacity: 1;
+
+       }
+       @keyframes  glowing{
+        0%{background-position: 0 0;}
+        50%{background-position: 400% 0;}
+        100%{background-position: 0 0;}
+       }
+       .btn:hover::before{
+        opacity: 1;
+       }
+       .btn:active:after{
+        background: transparent;
+       }
+       .btn:active{
+        color:white;
+        font-weight: bold
+       }
+       .ank{
+        text-decoration: none;
+        color: red;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        
+       }
+        
+
+
+    </style>
+</head>
+<body class="container-fluid">
+    <header id="nav">
+            <div>
+        <button class="btn"  ><a class="ank" href="../../public/new3Dproject/Portfolio Website/index.html">HOME</a></button>
+        <button class="btn" ><a  class="ank" href="../new3Dproject/NewCard1.html">3D DESIGN</a></button>
+            </div>
+           <div>
+              <img src="../../public/image/port.png" width="210px" height="70px" style="padding: 15px; border-radius: 50px; margin-top: 10px;margin-left:15px;">
+           </div>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> 
+    </header>
+    <div id="main">
+        <div id="page">
+            <div id="loop" style="height:300px; color:darkred;">
+                <h1 style="font-size: 150px;"><b>WELL</b>COME <b><i>TO</i></b> <span style="color: green;">SONU</span> PORTFOLIO <span><i style="color: green;">DESIGN</i></span><span style="color: darkblue;"><i>WEBSITE</i></span></h1></span>
+                <h1 style="font-size: 150px;"><b><span class="&nbsp;&nbsp;" style="margin-left: 20px;">WELL</span></b>COME <b><i>TO</i></b> <span style="color: green;">SONU</span> PORTFOLIO <span><i>DESIGN</i></span> <span style="color: darkblue;"><i>WEBSITE</i></span></h1></span></h1>
+                <h1 style="font-size: 150px;"><b><span class="&nbsp;&nbsp;" style="margin-left: 20px;">WELL</span></b>COME <b><i>TO</i></b> <span>SONU</span> PORTFOLIO <span><i>DESIGN</i></span><span style="color: darkblue;"><i>WEBSITE</i></span></h1></span></h1>
+            </div>
+            <canvas></canvas>
+        </div>
+        <div id="page1">
+            <div id="right-text">
+                <h1 class="underline"><b><u style="color: gray;">ABOUT ME</u></b></h1>
+                <b><span><p>A PASSIONATE FRONTENT DEVELOPER  <br>WITH 6 MONT INTERNSHIP I HAVE COMPLETATED <br> MY EXPERTIES LIES IN CRAFTING SEAMLESS USER <br>EXPERIENCES USING A TOOLKIT THAT <br>INCLUDES  JAVASCRIPT,REACT.JS,<br>ANGULAR,CSS,BOOTSTRAP AND MORE...</p></span>
+                </b>  
+            </div>
+            <div id="left-text">
+                <h1><u style="color: gray;">DESIGN</u></h1>
+                <h2>MAKE A MORE
+                    <br>
+                    INTERACTION
+                    <br>
+                    BUILD AND DESIGN</h2>
+                    <h3>..USER INTERFACES</h3>
+            </div>
+        </div>
+        <div id="page2">
+            <div id="text1">
+                <h1><u style="color: gray;">CERTIFIED FORM</u></h1>
+                    <H2>NARESH IT(HYDERABAD)
+                    WITH </h2>
+                    <h2>
+                        REACT.JS OR ANGULAR OR 
+                    </h2>
+                    <h2>JAVASCRIPT OR NODE.JS 
+                    </h2>
+                    <h3>AND MORE....</h3>
+            </div>
+            <div id="text2">
+                <h1><u style="color: gray;">PROJECTS</u></h1>
+                <h3><li>VIDEO TUTORIAL</li></h3>
+                   <h3><li>SHOPPING DESIGN</li></h3>
+                    <h3>
+                      <li> KFC DESIGN</li>
+                    </h3>
+                    <h3><li>LOAN CALCULATER DESIGN</li></h3>
+                    <h3><li>3D DESIGNS</li></h3>
+                </ul>
+                </div>
+        </div>
+        <div id="page1" style="top: -50px;">
+            <div id="text2">
+                <h1 style="color: gray; size: 50px;"><u>EXPERIENCE</u></h1>
+                <p>
+                   <b>I WORKED AS A WEB DEVELOPER INTERNT AT QUADRAND TECHNOLOGY <br>(HYDERABAD) FOCUS IS 
+                    ON DESIGNING ROBUST APPLICATION AND<br> DEVELOPING WEBSITES THATS LOOKS GRATE AND WORK WELL,<br></b>
+                </p>
+               
+            </div>
+          
+
+            <div id="page4">
+               <h1 style="color: gray; font-family: Arial, Helvetica, sans-serif;"><u>SKILLS KNOWS</u></h1>
+               <div>
+                <ul>
+                   <h2><li>HTML</li></h2>
+                   <h2><li>CSS</li></h2>
+                   <h2><li>SASS</li></h2>
+                   <h2><li>BOOTSTRAP</li></h2>
+                   <h2><li>TAILWIND</li></h2>
+                   <h2><li>JQUERY</li></h2>
+                   <h2><li>JAVASCRIPT</li></h2>
+                   <h2><li>TYPESCRIPT</li></h2>
+                   <h2><li>NODE.JS</li></h2>
+                   <h2><li>EXPRESS.JS</li></h2>
+                   <h2><li>REACT.JS</li></h2>
+                   <h2><li>ANGULAR</li></h2>
+                   <h2><li>MONGO DB</li></h2>
+                   <h2><li>ORACLE</li></h2>
+                </ul>
+               </div>
+            </div>
+        </div>
+      
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
